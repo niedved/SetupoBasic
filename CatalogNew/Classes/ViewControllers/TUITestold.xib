@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="6254" systemVersion="14C99d" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TuiCatalogGalleryController">
+            <connections>
+                <outlet property="buttonAddToFav" destination="gIs-2C-KYN" id="w2c-gl-rPv"/>
+                <outlet property="buttonBuy" destination="mVr-Bv-Jkg" id="yKz-au-qt3"/>
+                <outlet property="buttonDelete" destination="sdh-rW-txI" id="9Xj-Fd-jSz"/>
+                <outlet property="buttonShare" destination="sYh-Pe-Pe3" id="w4G-gb-wEW"/>
+                <outlet property="imageScrollView" destination="RzS-vP-98J" id="v3M-eT-VBv"/>
+                <outlet property="indView" destination="9Y8-CM-CgE" id="9e0-xw-bjS"/>
+                <outlet property="ishueTopic" destination="RMY-19-ZOG" id="dBD-iH-bWV"/>
+                <outlet property="issueName" destination="48h-I5-INb" id="USZ-nR-w0P"/>
+                <outlet property="loadViewExtra" destination="Y7H-fp-X7G" id="RWN-Mc-T4Y"/>
+                <outlet property="pageLabel" destination="hq6-3T-YQl" id="ZOa-6U-cia"/>
+                <outlet property="view" destination="2" id="3"/>
+                <outlet property="viewForInd" destination="g2B-Xl-Kij" id="pii-zb-bKz"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="540" height="442"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RzS-vP-98J">
+                    <rect key="frame" x="20" y="43" width="260" height="370"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="aTC-qK-cqg"/>
+                    </connections>
+                </scrollView>
+                <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Styczen 2076" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RMY-19-ZOG">
+                    <rect key="frame" x="20" y="-3" width="260" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mVr-Bv-Jkg">
+                    <rect key="frame" x="318" y="96" width="202" height="40"/>
+                    <color key="backgroundColor" red="0.42429162170000001" green="0.66666666669999997" blue="0.155940304" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="FREE/$55">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="selectIshueToView:" destination="-1" eventType="touchUpInside" id="eaV-xE-h8w"/>
+                    </connections>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="001 / 256" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hq6-3T-YQl">
+                    <rect key="frame" x="20" y="416" width="260" height="21"/>
+                    <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="14"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="STYCZEŃ 2014" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="48h-I5-INb">
+                    <rect key="frame" x="20" y="15" width="260" height="28"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LQz-m5-BTX">
+                    <rect key="frame" x="524" y="6" width="12" height="12"/>
+                    <state key="normal" image="closeP.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="hidePreview:" destination="-1" eventType="touchUpInside" id="bx4-Lk-8Gf"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gIs-2C-KYN">
+                    <rect key="frame" x="318" y="188" width="202" height="45"/>
+                    <color key="backgroundColor" red="0.42429162170000001" green="0.66666666669999997" blue="0.155940304" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="Add to favourite">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="addToFav:" destination="-1" eventType="touchUpInside" id="39t-cj-46f"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sYh-Pe-Pe3">
+                    <rect key="frame" x="318" y="251" width="202" height="45"/>
+                    <color key="backgroundColor" red="0.42429162170000001" green="0.66666666669999997" blue="0.155940304" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="shareOnFb:" destination="-1" eventType="touchUpInside" id="NIb-ZC-bHI"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sdh-rW-txI" userLabel="delete">
+                    <rect key="frame" x="318" y="314" width="202" height="45"/>
+                    <color key="backgroundColor" red="0.42429162170000001" green="0.66666666669999997" blue="0.155940304" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="deleteFiles:" destination="-1" eventType="touchUpInside" id="927-zT-AcS"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g2B-Xl-Kij">
+                    <rect key="frame" x="117" y="187" width="67" height="67"/>
+                    <subviews>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="9Y8-CM-CgE">
+                            <rect key="frame" x="16" y="16" width="37" height="37"/>
+                            <color key="color" red="0.0" green="0.0021968924129999999" blue="0.43548708549999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </activityIndicatorView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.081930843929999997" green="0.11311680740000001" blue="0.55656090560000004" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y7H-fp-X7G">
+                    <rect key="frame" x="318" y="139" width="200" height="41"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="304" y="297"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="closeP.png" width="19" height="19"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

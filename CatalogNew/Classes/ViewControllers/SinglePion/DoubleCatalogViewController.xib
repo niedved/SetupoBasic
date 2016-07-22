@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DoubleCatalogViewController">
+            <connections>
+                <outlet property="myZoomableView" destination="gNL-tB-MlR" id="Nah-Av-WCj"/>
+                <outlet property="scrollView" destination="ssG-6K-Axg" id="68J-f5-bRV"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <scrollView autoresizesSubviews="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ssG-6K-Axg">
+                    <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                    <subviews>
+                        <view autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gNL-tB-MlR" userLabel="ZoomableView" customClass="ZoomableView">
+                            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <accessibility key="accessibilityConfiguration">
+                                <accessibilityTraits key="traits" notEnabled="YES"/>
+                            </accessibility>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="gNL-tB-MlR" secondAttribute="trailing" id="01r-L1-A7l"/>
+                        <constraint firstItem="gNL-tB-MlR" firstAttribute="centerY" secondItem="ssG-6K-Axg" secondAttribute="centerY" id="4xy-5F-BtF"/>
+                        <constraint firstItem="gNL-tB-MlR" firstAttribute="top" secondItem="ssG-6K-Axg" secondAttribute="top" id="KJX-cC-qYT"/>
+                        <constraint firstItem="gNL-tB-MlR" firstAttribute="leading" secondItem="ssG-6K-Axg" secondAttribute="leading" id="RUZ-nw-9rd"/>
+                        <constraint firstItem="gNL-tB-MlR" firstAttribute="centerX" secondItem="ssG-6K-Axg" secondAttribute="centerX" id="aZf-bH-qOL"/>
+                        <constraint firstAttribute="bottom" secondItem="gNL-tB-MlR" secondAttribute="bottom" id="v97-sK-40y"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ssG-6K-Axg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="D1K-SH-oeJ"/>
+                <constraint firstItem="ssG-6K-Axg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="X3J-4r-jtx"/>
+                <constraint firstAttribute="bottom" secondItem="ssG-6K-Axg" secondAttribute="bottom" id="pXA-n9-u7z"/>
+                <constraint firstAttribute="trailing" secondItem="ssG-6K-Axg" secondAttribute="trailing" id="vtp-x4-MHw"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10171" systemVersion="15E65" minimumToolsVersion="Xcode 4.3">
+    <entity name="Bookmarks" syncable="YES">
+        <attribute name="bookmark_id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="coverThumbUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="issue_id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="set_time" optional="YES" attributeType="Date" syncable="YES"/>
+    </entity>
+    <entity name="Entity" syncable="YES"/>
+    <entity name="Entity1" syncable="YES"/>
+    <entity name="Entity2" syncable="YES"/>
+    <entity name="Fav" syncable="YES">
+        <attribute name="ishue_id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="set_time" optional="YES" attributeType="Date" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Bookmarks" positionX="162" positionY="207" width="128" height="120"/>
+        <element name="Fav" positionX="160" positionY="192" width="128" height="73"/>
+        <element name="Entity" positionX="162" positionY="234" width="128" height="45"/>
+        <element name="Entity1" positionX="171" positionY="243" width="128" height="45"/>
+        <element name="Entity2" positionX="180" positionY="252" width="128" height="45"/>
+    </elements>
+</model>
