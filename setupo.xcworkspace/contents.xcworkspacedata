@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:SetupoBasic.podspec">
+   </FileRef>
+   <FileRef
       location = "group:setupobasic.xcodeproj">
    </FileRef>
    <FileRef

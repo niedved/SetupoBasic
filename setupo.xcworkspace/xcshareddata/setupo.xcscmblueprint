@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "34E184D7172042731AE7A3CECE1A91EA7FCF3024",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "34E184D7172042731AE7A3CECE1A91EA7FCF3024" : 0,
+    "99635490B850FDBC2123AACD6C2A7D395A32F527" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "11219846-3DCB-4377-882B-C32782969D69",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "34E184D7172042731AE7A3CECE1A91EA7FCF3024" : "SetupoBasic\/",
+    "99635490B850FDBC2123AACD6C2A7D395A32F527" : "SetupoApps2\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "setupo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "setupo.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/niedved\/SetupoBasic.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "34E184D7172042731AE7A3CECE1A91EA7FCF3024"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/niedved\/SetupoApps.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "99635490B850FDBC2123AACD6C2A7D395A32F527"
+    }
+  ]
+}
